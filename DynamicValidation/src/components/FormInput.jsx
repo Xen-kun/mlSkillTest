@@ -1,4 +1,3 @@
-// src/components/FormInput.jsx
 function FormInput({ label, name, type = "text", value, onChange, error }) {
   return (
     <div>

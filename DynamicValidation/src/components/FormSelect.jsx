@@ -1,4 +1,3 @@
-// src/components/FormSelect.jsx
 function FormSelect({ label, name, value, options = [], onChange, disabled, error }) {
   return (
     <div>

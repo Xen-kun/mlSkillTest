@@ -9,10 +9,8 @@ app.use(express.json());
 
 const USERS_FILE = path.join(__dirname, "users.json");
 
-// Load existing usernames
 const getUsers = () => JSON.parse(fs.readFileSync(USERS_FILE, "utf-8"));
 
-// ✅ Username validation endpoint
 app.get("/check-username", (req, res) => {
   const { username } = req.query;
   const users = getUsers();
@@ -21,7 +19,6 @@ app.get("/check-username", (req, res) => {
   res.json({ available });
 });
 
-// ✅ Registration (optional future endpoint)
 app.post("/register", (req, res) => {
   const users = getUsers();
   const newUser = req.body;
