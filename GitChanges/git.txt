@@ -1,0 +1,38 @@
+# ===== Git: Create a Testing Branch and Use Commits =====
+
+# 1. Fetch latest changes from the remote repository (optional but good practice)
+git fetch origin
+# This updates your local Git so it knows about any changes on the server.
+
+# 2. Create a new branch called 'testing' and switch to it
+git checkout -b testing
+# A branch is like a copy of your project where you can safely try changes.
+# '-b' means "create a new branch and switch to it."
+
+# 3. Push the new branch to the remote server (optional)
+git push -u origin testing
+# Makes your testing branch visible to others or backed up online.
+
+# 4. Merge changes from another branch (like main) into testing
+git checkout testing
+git merge main
+# This brings all updates from main into your testing branch so you start with the latest code.
+
+# 5. Pick a specific commit from another branch if you only want certain changes
+git cherry-pick <commit-hash>
+# This copies one specific change (commit) from another branch to your testing branch.
+
+# 6. Resolve conflicts if Git can't automatically merge changes
+#    - Edit the files that have conflicts
+#    - Stage the changes
+git add .
+git cherry-pick --continue
+# OR, if merging
+git commit
+# Conflicts happen when the same part of a file is changed in two branches. Fix it manually.
+
+# 7. Check your branch and commits
+git status
+git log --oneline
+# 'git status' shows which files changed.
+# 'git log --oneline' shows recent commits in a short format.
