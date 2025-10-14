@@ -1,4 +1,3 @@
-// Function to generate a random color in hexadecimal format
 function getRandomColor() {
     const letters = '0123456789ABCDEF';
     let color = '#';
@@ -10,12 +9,10 @@ function getRandomColor() {
     return color;
 }
 
-// Function to change the background color and log the hexadecimal value
 function changeBackgroundColor() {
   const randomColor = getRandomColor();
   document.body.style.backgroundColor = randomColor;
 }
 
-// Add an event listener to the button to trigger the color change
 const colorButton = document.getElementById('colorButton');
 colorButton.addEventListener('click', changeBackgroundColor);
