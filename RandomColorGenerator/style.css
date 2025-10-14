@@ -1,0 +1,47 @@
+/* You may modify this if you wish. Please indicate which sections you
+have modified, added, or removed. */
+/* body {
+font-family: Arial, sans-serif;
+text-align: center;
+padding: 20px;
+}
+
+h1 {
+color: #333;
+
+}
+
+button {
+background-color: #007BFF;
+color: #fff;
+font-size: 18px;
+padding: 10px 20px;
+cursor: pointer;
+border: none;
+} */
+
+/* You may modify this if you wish. Please indicate which sections
+you have modified, added, or removed. */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+h2 {
+    color: #333;
+}
+
+button {
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px;
+    cursor: pointer;
+    border: 1px solid black;
+    margin-top: 20px;
+}

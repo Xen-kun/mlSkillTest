@@ -1,0 +1,18 @@
+{
+  "Region 1": {
+    "Ilocos Norte": {
+      "Laoag City": ["Barangay 1 San Lorenzo", "Barangay 2 Santa Joaquina"],
+      "Batac City": ["Barangay 1 Nalupta", "Barangay 2 Quiling Norte"]
+    },
+    "Ilocos Sur": {
+      "Vigan City": ["Barangay I", "Barangay II"],
+      "Candon City": ["Bagani Campo", "Balingaoan"]
+    }
+  },
+  "Region 2": {
+    "Cagayan": {
+      "Tuguegarao City": ["Carig Norte", "Carig Sur"],
+      "Aparri": ["Paddaya", "San Antonio"]
+    }
+  }
+}
