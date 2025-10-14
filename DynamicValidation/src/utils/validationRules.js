@@ -9,6 +9,6 @@ export const validationRules = {
   },
   address: {
     street: { required: true },
-    zip: { required: true, numeric: true }, // ✅ only numbers allowed
+    zip: { required: true, numeric: true },
   },
 };
